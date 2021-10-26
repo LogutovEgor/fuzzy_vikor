@@ -3,3 +3,14 @@ C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.Ge
 C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfoInputs.cache
 C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.AssemblyInfo.cs
 C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.exe
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.deps.json
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.runtimeconfig.json
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.runtimeconfig.dev.json
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.dll
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ref\ConsoleApp.dll
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\bin\Debug\net5.0\ConsoleApp.pdb
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.dll
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ref\ConsoleApp.dll
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.pdb
+C:\Repositories\fuzzy_vikor\ConsoleApp\ConsoleApp\obj\Debug\net5.0\ConsoleApp.genruntimeconfig.cache
