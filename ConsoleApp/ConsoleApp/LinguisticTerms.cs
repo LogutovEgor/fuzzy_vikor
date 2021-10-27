@@ -40,7 +40,7 @@ public static class LinguisticTerms
             MEDIUM => new TriangularNumber(0.3f, 0.5f, 0.7f),
             HIGH => new TriangularNumber(0.5f, 0.7f, 0.9f),
             VERY_HIGH => new TriangularNumber(0.7f, 0.9f, 1f),
-            _ => new TriangularNumber()
+            _ => throw new System.Exception($"Can not convert unknown linguistic term: {linguisticTerm}")
         };
 
     public static TriangularNumber ConvertToTriangularFromLinguisticAlternative(string linguisticTerm) =>
@@ -52,7 +52,7 @@ public static class LinguisticTerms
             GOOD => new TriangularNumber(0.4f, 0.6f, 0.8f),
             VERY_GOOD => new TriangularNumber(0.6f, 0.8f, 1f),
             EXCELLENT => new TriangularNumber(0.8f, 0.9f, 1f),
-            _ => new TriangularNumber()
+            _ => throw new System.Exception($"Can not convert unknown linguistic term: {linguisticTerm}")
         };
 
 
