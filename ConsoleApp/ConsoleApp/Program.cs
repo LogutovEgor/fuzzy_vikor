@@ -329,10 +329,40 @@ for (int criteria = 0; criteria < criterias; criteria++)
 {
     for (int alternative = 0; alternative < alternatives; alternative++)
     {
+        float divider = fO[criteria].Right - fStar[criteria].Left;
 
+        //triangular number diff
+        float left = aggregatedAlternativesTriangularEstimates[criteria, alternative].Left - fStar[criteria].Right;
+        float middle = aggregatedAlternativesTriangularEstimates[criteria, alternative].Middle - fStar[criteria].Middle;
+        float right = aggregatedAlternativesTriangularEstimates[criteria, alternative].Right - fStar[criteria].Left;
+
+        d[criteria, alternative] = new TriangularNumber(left / divider, middle / divider, right / divider);
     }
 }
 
+Console.WriteLine("\n~d:");
+for (int criteria = 0; criteria <= criterias; criteria++)
+{
+    for (int alternative = 0; alternative <= alternatives; alternative++)
+        if (criteria == 0 && alternative == 0)
+            Console.Write(String.Format("{0,20}|", ""));
+        else if (criteria == 0 && alternative > 0)
+            Console.Write(String.Format("{0,20}|", $"Alternative {alternative}"));
+        else if (criteria > 0 && alternative == 0)
+            Console.Write(String.Format("{0,20}|", $"Criterion {criteria}"));
+        else
+            Console.Write(String.Format("{0,20}|", $"{d[criteria - 1, alternative - 1]}"));
+    Console.WriteLine();
+}
 
+TriangularNumber[] S = new TriangularNumber[alternatives];
+for (int alternative = 0; alternative < alternatives; alternative++)
+{
+    TriangularNumber sum = new TriangularNumber();
+    for (int criteria = 0; criteria < criterias; criteria++)
+        sum += aggregatedCriteriasTriangularEstimates[criteria] * d[criteria, alternative];
+
+    S[alternative] = sum;
+}
 
 

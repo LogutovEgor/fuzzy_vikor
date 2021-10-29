@@ -14,4 +14,14 @@
     }
 
     public override string ToString() => $"<{Left} {Middle} {Right}>";
+
+    public static TriangularNumber operator +(TriangularNumber operand1, TriangularNumber operand2) =>
+        new TriangularNumber(operand1.Left + operand2.Left, operand1.Middle + operand2.Middle, operand1.Right + operand2.Right);
+
+    public static TriangularNumber operator -(TriangularNumber operand1, TriangularNumber operand2) =>
+        new TriangularNumber(operand1.Left - operand2.Right, operand1.Middle - operand2.Middle, operand1.Right - operand2.Left);
+
+    public static TriangularNumber operator *(TriangularNumber operand1, TriangularNumber operand2) =>
+        new TriangularNumber(operand1.Left * operand2.Left, operand1.Middle * operand2.Middle, operand1.Right * operand2.Right);
+
 }
