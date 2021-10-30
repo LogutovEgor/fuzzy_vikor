@@ -1,6 +1,6 @@
 ﻿using System;
 
-bool testData = true;
+bool testData = false;
 
 int criterias;
 int alternatives;
@@ -839,6 +839,7 @@ else
 
 }
 
+Console.ReadKey();
 
 
 
