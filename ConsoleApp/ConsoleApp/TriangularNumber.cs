@@ -1,8 +1,8 @@
 ﻿public class TriangularNumber
 {
-    public float Left { get; private set; } = default;
-    public float Middle { get; private set; } = default;
-    public float Right { get; private set; } = default;
+    public float Left { get; set; } = default;
+    public float Middle { get; set; } = default;
+    public float Right { get; set; } = default;
 
     public TriangularNumber() { }
 
@@ -24,4 +24,12 @@
     public static TriangularNumber operator *(TriangularNumber operand1, TriangularNumber operand2) =>
         new TriangularNumber(operand1.Left * operand2.Left, operand1.Middle * operand2.Middle, operand1.Right * operand2.Right);
 
+    public static TriangularNumber operator *(TriangularNumber operand1, float operand2) =>
+        new TriangularNumber(operand1.Left * operand2, operand1.Middle * operand2, operand1.Right * operand2);
+
+    public static TriangularNumber operator *(float operand1, TriangularNumber operand2) =>
+     new TriangularNumber(operand1 * operand2.Left, operand1 * operand2.Middle, operand1 * operand2.Right);
+
+    public static TriangularNumber operator /(TriangularNumber operand1, float operand2) =>
+    new TriangularNumber(operand1.Left / operand2, operand1.Middle / operand2, operand1.Right / operand2);
 }
